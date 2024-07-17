@@ -1,7 +1,7 @@
 ---
 title: 机器学习资料
 date: 2024-07-17 20:35:21
-tags: [machine learning]
+tags: [ml]
 ---
 
 
