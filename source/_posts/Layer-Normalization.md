@@ -2,6 +2,8 @@
 title: Layer Normalization
 date: 2019-03-09 00:46:41
 tags: deep learning
+mathjax: true
+
 ---
 
 在深度学习中, `Batch Normalization` (BN)并不适合RNN结构, BN有以下缺点:
