@@ -91,24 +91,34 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very
+first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
+you can ask me on <a
+target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/17/hello-world/" data-id="clyps1x9i0000bculfc392nby" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/07/17/hello-world/" data-id="clypsm6ue0001w0ul4prkdgm4" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -142,36 +152,65 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>在深度学习中, <code>Batch Normalization</code> (BN)并不适合RNN结构, BN有以下缺点:</p>
-<ol>
+        <p>在深度学习中, <code>Batch Normalization</code> (BN)并不适合RNN结构,
+BN有以下缺点:</p>
+<ol type="1">
 <li>不同的时间步权重不一致, 需要保留每个时间步对应的数据.</li>
-<li>序列长度不同. 序列长度决定时间步长度, 使得归一化参数可靠程度不同.</li>
-<li>不能用于online 学习. </li>
+<li>序列长度不同. 序列长度决定时间步长度,
+使得归一化参数可靠程度不同.</li>
+<li>不能用于online 学习.</li>
 <li>batch size影响着结果.</li>
 </ol>
-<p>针对BN的缺点, Jimmy等人提出的 <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1607.06450.pdf">Layer normalization</a>(LN),  能够有效地避免BN的缺点. LN只使用当前的样本(序列)</p>
-<ol>
-<li>对每一个时间步, 分别计算各层所有神经元<strong>输入</strong> 端的均值和标准差, 并以此归一化.</li>
+<p>针对BN的缺点, Jimmy等人提出的 <a
+target="_blank" rel="noopener" href="https://arxiv.org/pdf/1607.06450.pdf">Layer normalization</a>(LN),
+能够有效地避免BN的缺点. LN只使用当前的样本(序列)</p>
+<ol type="1">
+<li>对每一个时间步, 分别计算各层所有神经元<strong>输入</strong>
+端的均值和标准差, 并以此归一化.</li>
 <li>每一层进行尺度缩放.</li>
 </ol>
 <p>LN对神经元的输入做Normalization的步骤如下.</p>
-<p>假设当前hidden layer的输入为$\mathbf{a}_{t}$, 则该层所有神经元上对应的均值与标准差分别为</p>
-<p>$$<br>\mu_t &#x3D; \frac{\sum \limits <em>{i&#x3D;1}^{H} a</em>{t,i}}{H}<br>\label{mean_t}<br>\tag{1}<br>$$</p>
-<p>$$<br>\sigma_t &#x3D; \sqrt{\frac{1}{H} \sum \limits <em>{i&#x3D;1} ^{H} (a</em>{t,i} - \mu_t )^2}<br>\label{eq:sigma1}<br>\tag{2}<br>$$</p>
-<p>归一化后, rescale,  再进入激活函数</p>
-<p>$$<br>\mathbf{h}_t &#x3D; f\left(\frac{\mathbf{g}}{\sigma_t} \odot (\mathbf{a}_t - \mu_t) + \mathbf{b}\right)<br>\label{eq:rescaled-activation}<br>\tag{3}<br>$$</p>
-<p>在 Jimmy的原文中, 各时间步共享参数$\mathbf{g}​$与$\mathbf{b}​$, 但是在NNDL中, 每一层有自己的缩放因子.</p>
+<p>假设当前hidden layer的输入为<span
+class="math inline">\(\mathbf{a}_{t}\)</span>,
+则该层所有神经元上对应的均值与标准差分别为</p>
+<p><span class="math display">\[
+\mu_t = \frac{\sum \limits _{i=1}^{H} a_{t,i}}{H}
+\label{mean_t}
+\tag{1}
+\]</span></p>
+<p><span class="math display">\[
+\sigma_t = \sqrt{\frac{1}{H} \sum \limits _{i=1} ^{H} (a_{t,i} - \mu_t
+)^2}
+\label{eq:sigma1}
+\tag{2}
+\]</span></p>
+<p>归一化后, rescale, 再进入激活函数</p>
+<p><span class="math display">\[
+\mathbf{h}_t = f\left(\frac{\mathbf{g}}{\sigma_t} \odot (\mathbf{a}_t -
+\mu_t) + \mathbf{b}\right)
+\label{eq:rescaled-activation}
+\tag{3}
+\]</span></p>
+<p>在 Jimmy的原文中, 各时间步共享参数<span
+class="math inline">\(\mathbf{g}​\)</span>与<span
+class="math inline">\(\mathbf{b}​\)</span>, 但是在NNDL中,
+每一层有自己的缩放因子.</p>
 <blockquote>
-<p> It also has only one set of gain and bias parameters shared over all time-steps.</p>
+<p>It also has only one set of gain and bias parameters shared over all
+time-steps.</p>
 </blockquote>
-<p>个人觉得应该使用共享的参数, 否则遇到超过训练数据长度的序列时, 将没有对应的参数. </p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[LN] Jimmy L. Ba, Jamie R. Kiros, Geoffrey E. Hinton (2016). Layer Normalization.  <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1607.06450.pdf">https://arxiv.org/pdf/1607.06450.pdf</a></p>
-<p>[NNDL] Charu C. Aggarwal. Neural Network and Deep Learning. </p>
+<p>个人觉得应该使用共享的参数, 否则遇到超过训练数据长度的序列时,
+将没有对应的参数.</p>
+<h2 id="参考文献">参考文献</h2>
+<p>[LN] Jimmy L. Ba, Jamie R. Kiros, Geoffrey E. Hinton (2016). Layer
+Normalization. <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1607.06450.pdf"
+class="uri">https://arxiv.org/pdf/1607.06450.pdf</a></p>
+<p>[NNDL] Charu C. Aggarwal. Neural Network and Deep Learning.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2019/03/09/Layer-Normalization/" data-id="clyps1x9u0001bcul6yu7038r" data-title="Layer Normalization" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2019/03/09/Layer-Normalization/" data-id="clypsm6u80000w0ula4w57sra" data-title="Layer Normalization" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
