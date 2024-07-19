@@ -13,3 +13,8 @@ tags: [machine learning]
 ## benchmark
 
 [fuxictr](https://fuxictr.github.io/tutorials/v2.0/)对常见的ctr模型做性能评估, 其github地址为<https://github.com/reczoo/FuxiCTR>.
+
+
+# reference
+
+[推荐系统论文](https://mp.weixin.qq.com/s?src=11&timestamp=1721355446&ver=5391&signature=nazb-xSe8*XljrVQstDDvD3SSQMgcNd8er1t5VeR-GBKQylGe6vY2ohgCdBerjfK7Zjrfgcb*MuAj3I9K7u9tdDwbC65zTPbmotMkg*KQHj4iu4ALvd9ciUNKEKP-GKW&new=1)
