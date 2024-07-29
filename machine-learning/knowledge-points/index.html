@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>推荐系统资料 | leengsmile&#39;s blog</title>
+  <title>知识点 | leengsmile&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="推荐系统 王树森的Recommender System介绍推荐系统的相关知识, 涵盖召回、排序、重排序、冷启动等内容. benchmark fuxictr对常见的ctr模型做性能评估, 其github地址为https:&#x2F;&#x2F;github.com&#x2F;reczoo&#x2F;FuxiCTR. reference 推荐系统论文">
+  <meta name="description" content="EM算法 吴恩达的cs229中给关于EM算法的推导见EM lecture notes, 可以关注 Extra close brace or missing open bracel\left(\theta}\right) 的收敛性证明. svm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="推荐系统资料">
-<meta property="og:url" content="https://leengsmile.github.io/industry/recommender-system-resources/index.html">
+<meta property="og:title" content="知识点">
+<meta property="og:url" content="https://leengsmile.github.io/machine-learning/knowledge-points/index.html">
 <meta property="og:site_name" content="leengsmile&#39;s blog">
-<meta property="og:description" content="推荐系统 王树森的Recommender System介绍推荐系统的相关知识, 涵盖召回、排序、重排序、冷启动等内容. benchmark fuxictr对常见的ctr模型做性能评估, 其github地址为https:&#x2F;&#x2F;github.com&#x2F;reczoo&#x2F;FuxiCTR. reference 推荐系统论文">
+<meta property="og:description" content="EM算法 吴恩达的cs229中给关于EM算法的推导见EM lecture notes, 可以关注 Extra close brace or missing open bracel\left(\theta}\right) 的收敛性证明. svm">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-07-17T12:35:21.000Z">
-<meta property="article:modified_time" content="2024-07-19T06:15:42.229Z">
+<meta property="article:published_time" content="2024-07-29T09:04:23.000Z">
+<meta property="article:modified_time" content="2024-07-29T09:07:13.626Z">
 <meta property="article:author" content="Leng Haijun">
 <meta property="article:tag" content="machine learning">
 <meta name="twitter:card" content="summary">
@@ -34,7 +34,119 @@
 
   
   
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body>
   <div id="container">
@@ -72,10 +184,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-industry/recommender-system-resources" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-machine-learning/knowledge-points" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/industry/recommender-system-resources/" class="article-date">
-  <time class="dt-published" datetime="2024-07-17T12:35:21.000Z" itemprop="datePublished">2024-07-17</time>
+    <a href="/machine-learning/knowledge-points/" class="article-date">
+  <time class="dt-published" datetime="2024-07-29T09:04:23.000Z" itemprop="datePublished">2024-07-29</time>
 </a>
     
   </div>
@@ -86,7 +198,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      推荐系统资料
+      知识点
     </h1>
   
 
@@ -94,24 +206,15 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="推荐系统">推荐系统</h2>
-<p>王树森的<a
-target="_blank" rel="noopener" href="https://github.com/wangshusen/RecommenderSystem">Recommender
-System</a>介绍推荐系统的相关知识,
-涵盖<code>召回</code>、<code>排序</code>、<code>重排序</code>、<code>冷启动</code>等内容.</p>
-<h2 id="benchmark">benchmark</h2>
-<p><a
-target="_blank" rel="noopener" href="https://fuxictr.github.io/tutorials/v2.0/">fuxictr</a>对常见的ctr模型做性能评估,
-其github地址为<a target="_blank" rel="noopener" href="https://github.com/reczoo/FuxiCTR"
-class="uri">https://github.com/reczoo/FuxiCTR</a>.</p>
-<h1 id="reference">reference</h1>
-<p><a
-target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?src=11&amp;timestamp=1721355446&amp;ver=5391&amp;signature=nazb-xSe8*XljrVQstDDvD3SSQMgcNd8er1t5VeR-GBKQylGe6vY2ohgCdBerjfK7Zjrfgcb*MuAj3I9K7u9tdDwbC65zTPbmotMkg*KQHj4iu4ALvd9ciUNKEKP-GKW&amp;new=1">推荐系统论文</a></p>
+        <h2 id="em算法">EM算法</h2>
+<p>吴恩达的cs229中给关于<code>EM</code>算法的推导见<a target="_blank" rel="noopener" href="https://cs229.stanford.edu/notes-spring2019/cs229-notes8-2.pdf">EM
+lecture notes</a>, 可以关注 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="28.507ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 12600 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="merror" data-mjx-error="Extra close brace or missing open brace" title="Extra close brace or missing open brace"><rect data-background="true" width="12600" height="950" y="-200"></rect><title>Extra close brace or missing open brace</title><g data-mml-node="mtext" style="font-family: serif;"><text data-variant="-explicitFont" transform="scale(1,-1)" font-size="884px">l\left(\theta}\right)</text></g></g></g></g></svg></mjx-container></span> 的收敛性证明.</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/CookMyCode/p/16156768.html">svm</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://leengsmile.github.io/industry/recommender-system-resources/" data-id="clz6rnyn9000370ul0zt77ivk" data-title="推荐系统资料" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://leengsmile.github.io/machine-learning/knowledge-points/" data-id="clz6rnync000570ulatn1755k" data-title="知识点" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -123,19 +226,10 @@ target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?src=11&amp;times
     
 <nav id="article-nav">
   
-    <a href="/industry/ctr-prediction-papers/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ctr预估的论文
-        
-      </div>
-    </a>
   
-  
-    <a href="/papers/Layer-Normalization/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/math%20books%20and%20courses/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Layer Normalization</div>
+      <div class="article-nav-title">书籍与课程</div>
     </a>
   
 </nav>
