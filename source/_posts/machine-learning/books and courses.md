@@ -1,5 +1,5 @@
 ---
-title: 机器学习资料
+title: 机器学习经典课程与书籍
 date: 2024-07-19 09:44:15
 tags: [machine learning]
 ---
@@ -20,6 +20,13 @@ tags: [machine learning]
 
 ## 课程
 
-cs229
+[cs229 Machine Learning](https://cs229.stanford.edu/) 是Andrew Ng开设的机器学习课程, 非常经典. 
 
-2022 notes: <https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf>
+历年的note值得精读
+
+[2022 sprint](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf)
+
+
+[简博士机器学习](https://www.bilibili.com/video/BV1No4y1o7ac?p=1)
+
+推导很详细，比如[Baum-Welch]()
